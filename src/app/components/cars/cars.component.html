@@ -1,0 +1,21 @@
+
+<app-car-add></app-car-add>
+
+<hr>
+
+<div class="row">
+    <div class="col-sm-4">
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let car of cars; let id = index">
+                <a [routerLink]="['/cars', car.id, car.name]" [queryParams]="{ color: car.color, year: car.year }" fragment="pic">{{car.name}}</a>
+            </li>
+        </ul>
+    </div>
+
+    <div class="col-sm-8">
+        <router-outlet></router-outlet>
+    </div>
+</div>
+
+         
+
