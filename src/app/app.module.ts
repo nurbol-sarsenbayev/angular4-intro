@@ -11,7 +11,6 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthService } from './services/auth.service';
 import { MyPageComponent } from './components/my-page/my-page.component';
 import { AuthGuard } from './services/auth.guard';
-import { CarsModule } from './components/cars/cars.module';
 
 @NgModule({
   declarations: [
@@ -23,8 +22,7 @@ import { CarsModule } from './components/cars/cars.module';
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule,
-    CarsModule
+    AppRoutingModule    
   ],
   providers: [ConsoleService, AuthService, AuthGuard],
   bootstrap: [AppComponent]
