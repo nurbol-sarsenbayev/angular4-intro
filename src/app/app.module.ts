@@ -6,11 +6,12 @@ import { AppComponent } from './app.component';
 
 import { HomePageComponent } from './components/home-page/home-page.component';
 import { AppRoutingModule } from './app-routing.module';
-import { ConsoleService } from './services/console.service';
+//import { ConsoleService } from './services/console.service';
 import { NotFoundComponent } from './components/not-found/not-found.component';
 import { AuthService } from './services/auth.service';
 import { MyPageComponent } from './components/my-page/my-page.component';
 import { AuthGuard } from './services/auth.guard';
+import { ConsoleService } from './services/console.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,11 @@ import { AuthGuard } from './services/auth.guard';
     FormsModule,
     AppRoutingModule    
   ],
-  providers: [ConsoleService, AuthService, AuthGuard],
+  providers: [
+    AuthService, 
+    AuthGuard,
+    ConsoleService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
