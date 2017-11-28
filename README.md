@@ -1,4 +1,7 @@
-# Myapp
+## Должно быть
+
+1. Nodejs
+2. json-server (если нет `npm i -g json-server`)
 
 ## Для запуска
 
