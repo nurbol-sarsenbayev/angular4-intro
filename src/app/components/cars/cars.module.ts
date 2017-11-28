@@ -24,6 +24,4 @@ import { CarsRoutingModule } from "./cars-routing.module";
         CarsService
     ]
 })
-export class CarsModule {
-
-}
+export class CarsModule {}

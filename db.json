@@ -1,0 +1,34 @@
+{
+  "cars": [
+    {
+      "name": "Audi",
+      "color": "yellow",
+      "year": 2012,
+      "id": 2
+    },
+    {
+      "name": "Ford",
+      "color": "blue",
+      "year": 2010,
+      "id": 3
+    },
+    {
+      "name": "Toyoto",
+      "color": "black",
+      "year": 2013,
+      "id": 4
+    },
+    {
+      "name": "Mazda",
+      "color": "green",
+      "year": 2008,
+      "id": 5
+    },
+    {
+      "name": "Mercedes",
+      "color": "red",
+      "year": 2009,
+      "id": 6
+    }
+  ]
+}

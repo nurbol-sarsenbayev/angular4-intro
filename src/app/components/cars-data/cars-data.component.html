@@ -1,0 +1,24 @@
+
+<div class="row">
+  
+  <div class="col-sm-4">
+    <ul class="list-group">
+      <li class="list-group-item" [ngClass]="{active: !selectedCarId}" (click)="selectedCarId = null">
+        Add Car
+      </li>
+    </ul>
+
+    <ul class="list-group">
+      <li class="list-group-item" *ngFor="let car of cars" [ngClass]="{active: selectedCarId == car.id}">
+        <a href="#" (click)="selectCar(car)">{{car.name}}</a>
+        <button class="btn btn-xs btn-danger" (click)="removeCar(car)">Delete</button>
+        <span class="badge" [ngStyle]="{backgroundColor: car.color}">{{car.id}}</span>
+      </li>
+    </ul>
+  </div>
+
+  <div class="col-sm-8">
+    <app-cars-data-form [carId]="selectedCarId" (onChanged)="updateList()"></app-cars-data-form>
+  </div>
+
+</div>
